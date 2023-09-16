@@ -1,0 +1,112 @@
+$color: rgb(77,77,255);
+$max: 900px;
+$min: 899px;
+%article
+{
+    text-align: center;
+    img{
+        width: 60%;
+        margin: 2%;
+    }
+    h1{
+        font-size: larger;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: left;
+        a{
+            text-decoration: none;
+            color: $color;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+%switch{
+    @media (min-width: $max) {
+        margin: 10% 10% 10% 40%;
+    }
+    @media (max-width: $min) {
+        margin: 10% 10% 10% 10%;
+    }
+}
+
+%bar{
+    ul{
+        text-align: center;
+        padding-left: 0;
+        li{
+            
+            list-style: none;
+         
+            a{
+                text-decoration: none;
+                h3{
+                    color: $color;
+                    font-size: 200%;
+                }
+            }
+            a:hover{
+                text-decoration:underline;
+            }
+        }
+    }
+}
+
+
+*{
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+}
+
+
+#sidebar{
+    @extend %bar;
+    @media (min-width: $max) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        ul{
+            li{
+                margin-top: 33%;
+            }
+        }
+    }
+    @media (max-width: $min) {
+        margin: 10% 10% 10% 10%;
+        ul{
+            li{
+                margin-top: 10%;
+            }
+        }
+    }
+  
+    
+}
+
+
+
+
+
+#home{
+    @extend %article;
+    @extend %switch;
+    
+}
+
+#Prosthetic{
+    @extend %article;
+    display: none;
+    @extend %switch;
+}
+
+#Chat{
+    @extend %article;
+    display: none;
+    @extend %switch;
+}

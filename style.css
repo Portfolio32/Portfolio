@@ -1,0 +1,88 @@
+#Chat, #Prosthetic, #home {
+  text-align: center;
+}
+#Chat img, #Prosthetic img, #home img {
+  width: 60%;
+  margin: 2%;
+}
+#Chat h1, #Prosthetic h1, #home h1 {
+  font-size: larger;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+}
+#Chat h1 a, #Prosthetic h1 a, #home h1 a {
+  text-decoration: none;
+  color: rgb(77, 77, 255);
+}
+#Chat h1 a:hover, #Prosthetic h1 a:hover, #home h1 a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  #Chat, #Prosthetic, #home {
+    margin: 10% 10% 10% 40%;
+  }
+}
+@media (max-width: 899px) {
+  #Chat, #Prosthetic, #home {
+    margin: 10% 10% 10% 10%;
+  }
+}
+
+#sidebar ul {
+  text-align: center;
+  padding-left: 0;
+}
+#sidebar ul li {
+  list-style: none;
+}
+#sidebar ul li a {
+  text-decoration: none;
+}
+#sidebar ul li a h3 {
+  color: rgb(77, 77, 255);
+  font-size: 200%;
+}
+#sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+}
+
+@media (min-width: 900px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+  }
+  #sidebar ul li {
+    margin-top: 33%;
+  }
+}
+@media (max-width: 899px) {
+  #sidebar {
+    margin: 10% 10% 10% 10%;
+  }
+  #sidebar ul li {
+    margin-top: 10%;
+  }
+}
+
+#Prosthetic {
+  display: none;
+}
+
+#Chat {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
